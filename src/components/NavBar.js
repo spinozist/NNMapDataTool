@@ -3,24 +3,24 @@ import React from "react";
 const NavBar = props => (
   <ul className="nav nav-tabs">
     <li className="nav-item">
-      <a
+      <div
         onClick={() => props.handlePageChange("Front")}
         className={
           props.currentPage === "Front" ? "nav-link active" : "nav-link"
         }
       >
         Home
-      </a>
+      </div>
     </li>
     <li className="nav-item">
-      <a
+      <div
         onClick={() => props.handlePageChange("DataExplorer")}
         className={
           props.currentPage === "DataExplorer" ? "nav-link active" : "nav-link"
         }
       >
         Data Explorer
-      </a>
+      </div>
     </li>
   </ul>
 );

@@ -4,7 +4,7 @@ import GuidedSearch from "../components/front-view/GuidedSearch"
 import Profile from "../components/front-view/Profile"
 
 const Front = () => (
-  <div id="front-page">
+  <div className="jumbotron">
       <SimpleSearch />
       <GuidedSearch />
       <Profile />
