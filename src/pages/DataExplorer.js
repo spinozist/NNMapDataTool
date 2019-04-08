@@ -7,7 +7,8 @@ import Map from "../components/maps";
 
 const DataExplorer = props => {
 
-  const [geography, setGeography] = useState('2010 Tracts')
+  const [geography, setGeography] = useState('2010 Tracts');
+  // const [search, setSearch] = useState('input here');
 
   const geojsonURLs = {
     '2000 Tracts': "https://opendata.arcgis.com/datasets/03137f764f2b4b89b221ce7caf236456_50.geojson",
@@ -16,28 +17,8 @@ const DataExplorer = props => {
     'Counties' : "https://opendata.arcgis.com/datasets/dc20713282734a73abe990995de40497_68.geojson",
   };
 
-  // const handleGeographyChange = event => {
-    
-  // }
-
-  // const [state, setState] = useState({
-  //   url: props.url
-  // });
-
-  // getData(url) {
-  //   API.getData(url)
-  //     .then(res => {
-  //       // console.log(res.data.features)
-  //       this.setState({
-  //         geojson: res.data
-  //       })
-  //     })
-  //     .catch(err => console.log(err))
-  // }
-
   return (
     <div className="jumbotron" id="data-explorer-page">
-      {/* <h1>Data Explorer</h1> */}
       <Map
         url={geojsonURLs[geography]}
       />
